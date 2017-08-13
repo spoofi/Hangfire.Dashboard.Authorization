@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Hangfire.Dashboard.Authorization")]
-[assembly: AssemblyDescription("Some authorization filters for Hangfire's Dashboard.")]
+[assembly: AssemblyDescription("Some authorization filters for Hangfire's Dashboard (Unofficial).")]
 [assembly: AssemblyProduct("Hangfire")]
 [assembly: AssemblyCopyright("Copyright © 2014 Sergey Odinokov")]
 

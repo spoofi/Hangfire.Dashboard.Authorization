@@ -1,32 +1,33 @@
 ﻿<?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Hangfire.Dashboard.Authorization</id>
-    <version>0.0.0</version>
-    <title>Hangfire Dashboard Authorization Filters</title>
-    <authors>Sergey Odinokov</authors>
-    <owners>odinserj</owners>
-    <projectUrl>https://github.com/HangfireIO/Hangfire.Dashboard.Authorization</projectUrl>
+    <id>Hangfire.Dashboard.Authorization.Unofficial</id>
+    <version>2.1.1</version>
+    <title>Hangfire Dashboard Authorization Filters (Unofficial)</title>
+    <authors>Andrey Suvorov</authors>
+    <owners>spoofi</owners>
+    <projectUrl>https://github.com/spoofi/Hangfire.Dashboard.Authorization</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <licenseUrl>https://raw.github.com/HangfireIO/Hangfire.Dashboard.Authorization/master/LICENSE</licenseUrl>
-    <description>Some authorization filters for Hangfire's Dashboard.</description>
-    <copyright>Copyright © 2014 Sergey Odinokov</copyright>
-    <tags>Hangfire Dashboard Authorization</tags>
-    <releaseNotes>https://github.com/HangfireIO/Hangfire.Dashboard.Authorization/releases
-    
-2.1.0
-* Added – Basic authentication filter (by @sergun).
-* Added – Check `Authentication.User` is not null in claims authorization filter (by @pjcunningham).
-  </releaseNotes>
-	<dependencies>
+    <licenseUrl>https://raw.github.com/spoofi/Hangfire.Dashboard.Authorization/master/LICENSE</licenseUrl>
+    <description>Some authorization filters for Hangfire's Dashboard (updated; Unofficial package).</description>
+    <copyright>Copyright © 2017 Andrey Suvorov</copyright>
+    <tags>Hangfire Dashboard Authorization Unofficial</tags>
+    <releaseNotes>
+      This is not an official release. Official releases can be seen on the page https://github.com/HangfireIO/Hangfire.Dashboard.Authorization/releases
+
+      2.1.1
+      * dependencies updated
+      * added new filters with implementation of IDashboardAuthorizationFilter (DashboardAuthorizationFilter, BasicDashboardAuthorizationFilter, ClaimsBasedDashboardAuthorizationFilter)
+    </releaseNotes>
+  <dependencies>
     <dependency id="Owin" version="1.0" />
-		<dependency id="Hangfire.Core" version="1.1.1" />
-	</dependencies>
+    <dependency id="Hangfire.Core" version="1.6.14" />
+  </dependencies>
   </metadata>
   <files>
-    <file src="Net45\Hangfire.Dashboard.Authorization.dll" target="lib\net45" />
-    <file src="Net45\Hangfire.Dashboard.Authorization.xml" target="lib\net45" />
-    <file src="Net45\Hangfire.Dashboard.Authorization.pdb" target="lib\net45" />
+    <file src="..\src\Hangfire.Dashboard.Authorization\bin\Debug\Hangfire.Dashboard.Authorization.dll" target="lib\net45" />
+    <file src="..\src\Hangfire.Dashboard.Authorization\bin\Debug\Hangfire.Dashboard.Authorization.xml" target="lib\net45" />
+    <file src="..\src\Hangfire.Dashboard.Authorization\bin\Debug\Hangfire.Dashboard.Authorization.pdb" target="lib\net45" />
     <file src="..\src\Hangfire.Dashboard.Authorization\**\*.cs" target="src" />
   </files>
 </package>

@@ -1,7 +1,8 @@
 Hangfire.Dashboard.Authorization
 ================================
 
-Some authorization filters for Hangfire's Dashboard.
+Some authorization filters for Hangfire's Dashboard (updated; Unofficial package).
+Official package available at https://www.nuget.org/packages/Hangfire.Dashboard.Authorization/
 
 Installation
 -------------
@@ -9,7 +10,7 @@ Installation
 This library is available as a NuGet Package:
 
 ```
-Install-Package Hangfire.Dashboard.Authorization
+Install-Package Hangfire.Dashboard.Authorization.Unofficial
 ```
 
 Usage
